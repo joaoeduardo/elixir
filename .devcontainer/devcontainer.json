@@ -1,0 +1,15 @@
+{
+    "name": "elixir",
+    // "workspaceMount": "type=bind,source=/c/Users/joaoeduardo/Desktop/elixir,target=/workspaces/elixir,consistency=delegated",
+    // "workspaceMount": "src=//c:/Users/joaoeduardo/Desktop/elixir,dst=/workspaces/elixir,type=bind,consistency=delegated",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "USER_ID": "1000",
+            "GROUP_ID": "1000"
+        }
+	},
+	"extensions": [
+		"jakebecker.elixir-ls"
+	]
+}
